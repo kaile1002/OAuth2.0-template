@@ -281,3 +281,10 @@ grant_type=authorization_code
 4. 员工账号源：先本地 MySQL，后续是否对接企业目录（LDAP/AD/HR 系统）？
 5. 是否需要我下一步直接生成可运行的 Node.js + MySQL 项目骨架（含授权页、登录按钮、回调、token 接口）？
 
+
+## 11. 决策确认结果（2026-03-23）
+
+- ✅ 最终方案：OIDC + 授权码 + PKCE
+- ✅ Portal 形态：Node BFF
+- ✅ Token 策略：Refresh Token 轮换 + 重放检测
+- ✅ 下一步：开始生成可运行项目骨架（已执行）
